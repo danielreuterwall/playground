@@ -1,0 +1,25 @@
+@(form: Form[Application.Login])
+@main("Login to the playground") {
+      <div class="well login">
+        @helper.form(action = routes.Application.authenticate, 'class -> "form-horizontal") {
+          <fieldset>
+            <legend>Login to the playground</legend>
+            <div class="control-group">
+              <label class="control-label" for="input01">Username</label>
+              <div class="controls">
+                <input name="mail" class="span4" type="text" placeholder="use playground as username" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="input01">Password</label>
+              <div class="controls">
+                <input name="password" class="span4" type="password" placeholder="use playground as password" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-large btn-primary">Login</button>
+            </div>
+          </fieldset>
+        }
+      </div>
+}

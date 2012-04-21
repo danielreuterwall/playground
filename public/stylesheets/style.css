@@ -1,0 +1,40 @@
+/* Main Stylesheet */
+/* Import Bootstrap styles and Responsive styles */
+@import url('bootstrap.min.css');
+
+/* Add top padding for navbar-top-fixed */
+body {
+ 	padding-top: 40px;
+  	padding-bottom: 40px;
+}
+
+.form-horizontal,
+.form-actions {
+	margin: 0px;
+	background: transparent;
+}
+
+.login {
+	margin-top: 30px;
+}
+
+.login legend {
+	border-bottom: 1px solid #ddd;
+}
+
+.navbar .brand a {
+	color: #69AF04;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.navbar .brand a:hover {
+	text-decoration: none;
+}
+
+/* Remove top padding when top navbar goes static in narrow viewports */
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
